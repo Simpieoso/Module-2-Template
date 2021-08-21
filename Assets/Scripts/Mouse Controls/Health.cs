@@ -22,7 +22,7 @@ public class Health : MonoBehaviour, IDamagable
         if (health <= 0)
         {
             source.PlayOneShot(deathSound);
-            Destroy(this.gameObject);
+            Destroy(this.gameObject, 2);
         }
         else
         {
